@@ -19,9 +19,10 @@ const flickerAndColorText = text =>
   .map(colorLetter)
   .join('');
 
+  //Pega o target (h1) e roda a função nele 
   const neonTemps = target => target.innerHTML = flickerAndColorText(target.textContent);
 
+  //Chamada da função para o target
   neonTemps(target);
-  target.onClick = ({target}) => neonTemps(target);
 
 
